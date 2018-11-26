@@ -25,3 +25,28 @@ scatterplotMatrix(~mpg+cyl+disp+hp+drat+wt+qsec+vs+am+carb|gear, data = mtcars, 
 
 3. Write a program to create a plot density by class variable.
 
+par(mfrow=c(3,4))
+names(mtcars)
+A <- density(mtcars$mpg)
+B <- density(mtcars$cyl)
+C <- density(mtcars$disp)
+D <- density(mtcars$hp)
+E <- density(mtcars$drat)
+f <- density(mtcars$wt)
+G <- density(mtcars$qsec)
+H <- density(mtcars$vs)
+I <- density(mtcars$am)
+J <- density(mtcars$gear)
+K <- density(mtcars$carb)
+
+plot(A)
+plot(B)
+plot(C)
+plot(D)
+plot(E)
+plot(f)
+plot(G)
+plot(H)
+plot(I)
+plot(J)
+plot(K)
